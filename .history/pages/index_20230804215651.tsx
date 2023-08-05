@@ -1,10 +1,10 @@
-import React from 'react';
-import type { NextPage } from 'next';
-import { signOut, useSession } from 'next-auth/react';
-import Head from 'next/head';
-import Image from 'next/image';
-import Info from '../components/Info';
-import Recommend from '../components/Recommend';
+import React from 'react'
+import type { NextPage } from 'next'
+import { signOut, useSession } from 'next-auth/react'
+import Head from 'next/head'
+import Image from 'next/image'
+import Info from '../components/Info'
+import Recommend from '../components/Recommend'
 
 const Home: NextPage = () => {
   

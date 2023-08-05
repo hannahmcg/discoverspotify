@@ -1,3 +1,4 @@
+import React from 'react';
 import { ProviderType } from "next-auth/providers";
 import {getProviders, signIn} from "next-auth/react"; 
 /*const Login: NextPage = (providers:any) => {

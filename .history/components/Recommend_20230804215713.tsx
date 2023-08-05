@@ -1,11 +1,11 @@
 import React from 'react';
-import {useSession} from "next-auth/react";
+import {useSession} from "next-auth/react"
 import {useEffect, useState} from "react";
 import useSpotify from '../hooks/useSpotify';
 import { artistIdsState } from "../atoms/artistAtom";
 import { trackIdsState } from "../atoms/trackAtom";
 import { useRecoilValue, useRecoilState } from "recoil";
-import Image from 'next/image';
+import Image from 'next/image'
 
 function Recommend() {
   const spotifyApi = useSpotify();
