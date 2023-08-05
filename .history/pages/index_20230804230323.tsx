@@ -33,7 +33,7 @@ const Home: NextPage = () => {
        {/* MAIN SECTION OF DASHBOARD */}
       <main className="flex w-full flex-1 flex-col items-center justify-center px-10 py-10 text-center">
        
-        <h1 className="text-5xl font-bold pb-10">
+        <h1 className="text-6xl font-bold pb-10">
           Welcome to <span className="text-[#5EB7AD]">DiscoverSpotify</span>
         </h1>
 

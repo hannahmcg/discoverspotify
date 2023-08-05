@@ -21,19 +21,19 @@ const Home: NextPage = () => {
        {/* NAV / HEADER AREA */}
       <div className="flex justify-between items-center">
             <div className="flex items-center space-x-3 rounded-full p-2">
-              <h2 className="text-md"> Hi {session?.user?.name} </h2>
+              <h2 className="text-lg"> Hi {session?.user?.name} </h2>
               <Image className="rounded-full" src={session?.user?.image ?? "/spotify_user.jpg"} alt="spotify user image" width={50} height={50}/>
             </div>
             <button className="hover:text-gray-700 bg-[#49948b] hover:bg-[#6fccc1] active:border-white active:border-2 py-3 px-6 rounded-full"
             onClick={() => signOut() }>
-              <p className="text-md">Logout</p>
+              <p className="text-lg">Logout</p>
             </button>
       </div>
 
        {/* MAIN SECTION OF DASHBOARD */}
       <main className="flex w-full flex-1 flex-col items-center justify-center px-10 py-10 text-center">
        
-        <h1 className="text-5xl font-bold pb-10">
+        <h1 className="text-6xl font-bold pb-10">
           Welcome to <span className="text-[#5EB7AD]">DiscoverSpotify</span>
         </h1>
 

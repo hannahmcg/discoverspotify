@@ -82,10 +82,10 @@ function Recommend() {
       <div className="grid grid-cols-1 lg:grid-cols-2">
         <div>
           <h3 className="py-2 text-xl">Underrated Tracks</h3>
-          <button onClick={generatePlaylist} className="text-md text-teal-400 py-2 px-4 bg-slate-800 rounded-full">Generate</button>
-          <div className="flex flex-col space-y-2 bg-slate-800 lg:mx-5 mt-5 p-2 lg:p-3 rounded-lg h-[300px] lg:h-[500px] lg:w-[500px] overflow-y-scroll">
+          <button onClick={generatePlaylist} className="text-xl text-teal-400 py-2 px-4 bg-slate-800 rounded-full">Generate</button>
+          <div className="flex flex-col space-y-2 bg-slate-800 mx-5 mt-5 p-3 rounded-lg h-[300px] lg:h-[500px] lg:w-[500px] overflow-y-scroll">
             {playlist1?.map((track) => (
-              <div key={track.id} className="flex space-x-5 items-center text-sm md:text-md">
+              <div key={track.id} className="flex space-x-5 items-center ">
                 <Image src={track.album?.images?.[0]?.url} alt="" width={40} height={40}/>
                 <p>{track.artists?.[0]?.name}:</p>
                 <p>{track.name}</p>
@@ -95,10 +95,10 @@ function Recommend() {
         </div>
         <div>
         <h3 className="py-2 text-xl">Based off your top artists</h3>
-          <button onClick={generatePlaylist2} className="text-md text-teal-400 py-2 px-4 bg-slate-800 rounded-full">Generate</button>
-          <div className="flex flex-col space-y-2 bg-slate-800 lg:mx-5 mt-5 p-2 lg:p-3 rounded-lg h-[300px] lg:h-[500px] lg:w-[500px] overflow-y-scroll">
+          <button onClick={generatePlaylist2} className="text-xl text-teal-400 py-2 px-4 bg-slate-800 rounded-full">Generate</button>
+          <div className="flex flex-col space-y-2 bg-slate-800 mx-5 mt-5 p-3 rounded-lg h-[300px] lg:h-[500px] lg:w-[500px] overflow-y-scroll">
             {playlist2?.map((track) => (
-              <div key={track.id} className="flex space-x-5 items-center text-sm md:text-md">
+              <div key={track.id} className="flex space-x-5 items-center ">
                 <Image src={track.album?.images?.[0]?.url} alt="" width={40} height={40}/>
                 <p>{track.artists?.[0]?.name}:</p>
                 <p>{track.name}</p>
@@ -110,10 +110,10 @@ function Recommend() {
       <div className="grid grid-cols-1 lg:grid-cols-2 pt-4">
         <div>
         <h3 className="py-2 text-xl">Based off your top tracks</h3>
-          <button onClick={generatePlaylist3} className="text-md text-teal-400 py-2 px-4 bg-slate-800 rounded-full">Generate</button>
-          <div className="flex flex-col space-y-2 bg-slate-800 lg:mx-5 mt-5 p-2 lg:p-3 rounded-lg h-[300px] lg:h-[500px] lg:w-[500px] overflow-y-scroll">
+          <button onClick={generatePlaylist3} className="text-xl text-teal-400 py-2 px-4 bg-slate-800 rounded-full">Generate</button>
+          <div className="flex flex-col space-y-2 bg-slate-800 mx-5 mt-5 p-3 rounded-lg h-[300px] lg:h-[500px] lg:w-[500px] overflow-y-scroll">
             {playlist3?.map((track) => (
-              <div key={track.id} className="flex space-x-5 items-center text-sm md:text-md">
+              <div key={track.id} className="flex space-x-5 items-center ">
                 <Image src={track.album?.images?.[0]?.url} alt="" width={40} height={40}/>
                 <p>{track.artists?.[0]?.name}:</p>
                 <p>{track.name}</p>
@@ -123,10 +123,10 @@ function Recommend() {
         </div>
         <div>
         <h3 className="py-2 text-xl">Dance Party</h3>
-          <button onClick={generatePlaylist4} className="text-md text-teal-400 py-2 px-4 bg-slate-800 rounded-full">Generate</button>
-          <div className="flex flex-col space-y-2 bg-slate-800 lg:mx-5 mt-5 p-2 lg:p-3 rounded-lg h-[300px] lg:h-[500px] lg:w-[500px] overflow-y-scroll">
+          <button onClick={generatePlaylist4} className="text-xl text-teal-400 py-2 px-4 bg-slate-800 rounded-full">Generate</button>
+          <div className="flex flex-col space-y-2 bg-slate-800 mx-5 mt-5 p-3 rounded-lg h-[300px] lg:h-[500px] lg:w-[500px] overflow-y-scroll">
             {playlist4?.map((track) => (
-              <div key={track.id} className="flex space-x-5 items-center text-sm md:text-md">
+              <div key={track.id} className="flex space-x-5 items-center ">
                 <Image src={track.album?.images?.[0]?.url} alt="" width={40} height={40}/>
                 <p>{track.artists?.[0]?.name}:</p>
                 <p>{track.name}</p>

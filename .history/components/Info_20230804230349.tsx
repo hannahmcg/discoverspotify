@@ -57,7 +57,7 @@ function Info() {
       <div>
         <p className="p-5 text-xl">Your Current Top Artists:</p>
         <div className="overflow-x-scroll flex justify-center items-center bg-slate-900 lg:bg-black rounded-lg">
-        <div className="flex space-x-10 lg:space-x-20 p-4 w-[400px] lg:w-[900px]">
+        <div className="flex space-x-10 lg:space-x-20 p-4 w-[500px] lg:w-[800px]">
           {topArtists.map((artist) => (
             <div key={artist.id} className="flex flex-col flex-wrap items-center"> {/* overflow-scroll w-screen --add if increase artists to 10*/}
               <div className="h-20 w-20 relative">
@@ -72,7 +72,7 @@ function Info() {
       <div className="">
         <p className="p-5 text-xl">Your Current Top Tracks:</p>
         <div className="overflow-x-scroll flex justify-center items-center bg-slate-900 lg:bg-black rounded-lg">
-        <div className="flex space-x-10 p-4 w-[400px] lg:w-[900px]">
+        <div className="flex space-x-10 p-4 w-[500px] lg:w-full">
           {topTracks.map((track) => (
             <div key={track.id} className="flex flex-col flex-wrap items-center">
               <p>{track.artists?.[0]?.name}:</p>
